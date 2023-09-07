@@ -5,7 +5,7 @@
   "homepage": "https://UrszulaBaranowska/migace/Project-Ice-Cream",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Project-Ice-Cream"
+    "build": "parcel build src/*.html --public-url /UrszulaBaranowska/Project-Ice-Cream"
   },
   "repository": {
     "type": "git",
