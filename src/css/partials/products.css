@@ -1,0 +1,37 @@
+.background {
+position: relative;
+}
+.products__label{
+color:var(  --dark-black);
+text-align: center;
+font-family:var(--font-standard);
+font-size: var(--L-text-size);
+font-style: normal;
+font-weight:var(--font-wieght-XL);
+line-height: normal;
+text-transform: uppercase;
+padding-top: 61px;
+}
+.products__title{
+color: #131313;
+text-align: center;
+font-family: Seymour One;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.2px;
+text-transform: uppercase;
+margin-bottom: 148px;
+}
+.products__list{
+display: flex;
+}
+.products__btn-service {
+    cursor: pointer;
+    background-color: #0000;
+    border: none;
+    margin-top: auto;
+    margin-bottom: 16px;
+    padding: 0;
+}
