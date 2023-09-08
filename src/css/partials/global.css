@@ -33,7 +33,7 @@
   }
   .body {
     font-size:16px;
-    font-family: var (--font-standard);
+    font-family: var(--font-standard);
     background-color: var(--bggreen);
     }
   img {
