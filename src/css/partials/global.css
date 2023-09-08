@@ -1,16 +1,16 @@
 :root {
-    --main-black: #000000,
-    --dark black: #131313,
-    --main-white: #FCFCFC,
-    --yellow: #F8D24E,
-    --bggreen: #84A178,
-    --icecreambg: #AEC6A5,
-    --icecoffebg: #EFD478,
-    --milkshakebg:#D6936D,
-    --inputbg: rgba(248, 210, 78, 0.10),
-    --ingredients-green:#9CBE8F,
-    --button-hover-focus: #0A8817,
-    --button-disabled: #ABABAB,
+    --main-black: #000;
+    --dark black: #131313;
+    --main-white: #FCFCFC;
+    --yellow: #F8D24E;
+    --bggreen: #84A178;
+    --icecreambg: #AEC6A5;
+    --icecoffebg: #EFD478;
+    --milkshakebg:#D6936D;
+    --inputbg: rgba(248, 210, 78, 0.10);
+    --ingredients-green:#9CBE8F;
+    --button-hover-focus: #0A8817;
+    --button-disabled: #ABABAB;
     --S-text-size: 12px;
     --M-text-size: 14px;
     --L-text-size: 18px;
