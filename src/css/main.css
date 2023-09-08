@@ -4,4 +4,5 @@
  * Wszystkie partials podłączamy tutaj.
  */
 /*# sourceMappingURL=main.css.map */
-@import '../css/partials/global.css'
+
+@import './css/partials/global.css';
