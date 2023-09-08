@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "1.1.0",
   "description": "",
-  "homepage": "https://UrszulaBaranowska/migace/Project-Ice-Cream",
+  "homepage": "https://urszulabaranowska.github.io/Project-Ice-Cream",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Project-Ice-Cream"
+    "build": "parcel build src/*.html --public-url /Project-Ice-Cream/"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,9 @@
     "url": "https://github.com/migace/parcel-project-template-pl-main/issues"
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.3",
     "@parcel/transformer-sass": "^2.8.3",
+    "@parcel/transformer-webmanifest": "^2.8.3",
     "parcel": "^2.8.3",
     "posthtml-include": "^1.7.4"
   }

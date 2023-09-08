@@ -1,0 +1,84 @@
+:root {
+    --main-black:#000;
+    --dark-black: #131313;
+    --main-white: #FCFCFC;
+    --yellow: #F8D24E;
+    --bggreen: #84A178;
+    --icecreambg: #AEC6A5;
+    --icecoffebg: #EFD478;
+    --milkshakebg: #D6936D;
+    --inputbg: rgba(248, 210, 78, 0.10);
+    --ingredients-green: #9CBE8F;
+    --button-hover-focus: #0A8817;
+    --button-disabled: #ABABAB;
+    --S-text-size: 12px;
+    --M-text-size: 14px;
+    --L-text-size: 18px;
+    --XL-text-size: 20px;
+    --XXL-text-size: 30px;
+    --font-wieght-XS: 400;
+    --font-wieght-S: 500;
+    --font-wieght-M: 600;
+    --font-weight-L: 700;
+    --font-wieght-XL: 800;
+    --font-wieght-XXL: 900;
+    --font-standard: 'Montserrat', sans-serif;
+    --font-special: 'Seymour One', sans-serif; 
+}
+.body {
+  font-size:16px;
+  font-family: var(--font-standard);
+  background-color: var(--bggreen);
+  }
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }  
+  button {
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+  .container {
+    min-width: 320px;
+    max-width: 480px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .container {
+      max-width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00000033;
+    z-index: 2;
+  }
