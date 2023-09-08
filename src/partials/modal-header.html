@@ -1,0 +1,48 @@
+<button type="button" class="order" data-modal-open-1>Buy Now!</button>
+
+<div class="backdrop is-hidden" data-modal-1>
+  <div class="modal-body">
+    <p>Buy now</p>
+    <button type="button" class="modal-close" data-modal-close-1>X</button>
+    <label>
+      <input type="radio" name="product" value="ice cream" /><img
+        src="./images/modals/icecream.jpg"
+        srcset="./images/modals/icecream2x.jpg 2x"
+        alt="circle picture with ice cream"
+      />
+    </label>
+    <label>
+      <input type="radio" name="product" value="ice coffee" /><img
+        src="./images/modals/icecoffee.jpg"
+        srcset=".images/modals/icecoffee2x.jpg 2x"
+        alt="circle picture of ice coffee"
+      />
+    </label>
+    <label>
+      <input type="radio" name="product" value="milkshake" /><img
+        src="./images/modals/milkshake.jpg"
+        srcset="./images/modals/milkshake2x.jpg 2x"
+        alt="circle picture of milk shake"
+      />
+    </label>
+    <div class="modal-form">
+      <form class="form">
+        <label for="username" class="modal-input">Name</label>
+        <input type="name" name="username" id="username" class="modal-form-input" required />
+        <label for="phone" class="modal-input">Phone</label>
+        <input type="number" name="phone" id="phone" class="modal-form-input" required />
+        <label class="texarea-label"> Comment</label>
+        <textarea name="comment" placeholder="Text input" class="comment" required></textarea>
+        <button type="submit" class="order-modal">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--  
+            
+            <label for="email" class="modal-input">Email</label>
+            <input type="email" name="email" id="email" class="modal-form-input" required />
+                   
+        
+        -->
