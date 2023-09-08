@@ -31,6 +31,11 @@
     padding: 0;
     text-decoration: 0;
   }
+  .body {
+    font-size:16px;
+    font-family: var (--font-standard);
+    background-color: var(--bggreen);
+    }
   img {
     display: block;
     width: 100%;
@@ -67,4 +72,13 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+  }
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00000033;
+    z-index: 2;
   }
