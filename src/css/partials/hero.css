@@ -35,4 +35,5 @@
 }
 .hero-icecream {
   background-image: url('/src/images/Hero/dots-mob-1x.png');
+  background-repeat: no-repeat;
 }
