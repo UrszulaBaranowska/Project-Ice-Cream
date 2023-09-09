@@ -93,7 +93,8 @@
 }
 
 .contact-btn-primary,
-.contact-btn-secondary {
+.contact-btn-secondary,
+.modal-btn {
   width: 196px;
   padding: var(--S-text-size);
   border-radius: 10px;
@@ -105,37 +106,136 @@
   border: 2px solid var(--yellow);
 }
 
+.modal-btn {
+  margin-top: 24px;
+  padding: 12px 34px;
+  width: auto;
+}
+
 .contact-btn-primary:hover,
-.contact-btn-secondary:hover {
+.contact-btn-secondary:hover,
+.modal-btn:hover {
   border-color: var(--button-hover-focus);
   cursor: pointer;
 }
 
 .contact-btn-primary:focus,
-.contact-btn-secondary:focus {
+.contact-btn-secondary:focus,
+.modal-btn:focus {
   color: #fff;
 }
 
 .contact-btn-primary:disabled,
-.contact-btn-secondary:disabled {
+.contact-btn-secondary:disabled,
+.modal-btn:disabled {
   border-color: var(--button-disabled);
 }
 
-.contact-btn-primary {
+.contact-btn-primary,
+.modal-btn {
   background-color: var(--yellow);
 }
 
-.contact-btn-primary:hover {
+.contact-btn-primary:hover,
+.modal-btn:hover {
   background-color: var(--button-hover-focus);
-}
-
-.contact-btn-primary:disabled {
-  border: var(--button-disabled);
 }
 
 .contact-btn-secondary {
   margin-top: 16px;
   background-color: transparent;
+}
+
+/*    MODALE    */
+
+.modal-body-locations,
+.modal-body-franchise {
+  background-color: var(--main-white);
+  border-radius: 10px;
+  border: 2px solid var(--yellow);
+  width: calc(100% - 40px);
+  max-width: 280px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 28px;
+}
+
+.map-img {
+  display: none;
+}
+
+.modal-body-locations p,
+.modal-body-franchise-header {
+  font-family: var(--font-special);
+  font-size: var(--L-text-size);
+  font-weight: var(--font-wieght-XS);
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.modal-body-franchise-header {
+  max-width: 322px;
+  font-size: 16px;
+  margin: 0 auto 20px;
+  text-align: left;
+}
+
+.modal-body-franchise-paragraph {
+  font-family: var(--font-standard);
+  line-height: 1.4;
+  font-size: var(--M-text-size);
+  text-align: left;
+}
+
+.franchise-form-wrapper {
+  display: block;
+  margin: 24px 0;
+}
+
+.franchise-form-wrapper input {
+  margin-bottom: 12px;
+}
+
+.franchise-form-wrapper textarea {
+  min-height: 64px;
+}
+
+.franchise-form-wrapper input,
+.franchise-form-wrapper textarea {
+  max-width: 368px;
+  width: 100%;
+  padding: 8px 12px 7px;
+  border-radius: 10px;
+  border: 1px solid var(--bggreen);
+  background: var(--inputbg);
+  color: var(--dark-black);
+  font-family: var(--font-standard);
+  font-size: var(--S-text-size);
+  line-height: 1.4;
+}
+
+.modal-close {
+  fill: var(--dark-black);
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background-color: transparent;
+}
+
+.modal-close-icon {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-icon:hover {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-icon:hover,
+.modal-close-icon:focus {
+  transform: rotate(360deg);
 }
 
 @media screen and (min-width: 768px) {
@@ -169,6 +269,70 @@
 
   .contact-btn-secondary {
     margin: 0;
+  }
+
+  .modal-body-locations,
+  .modal-body-franchise {
+    max-width: 568px;
+    padding: 32px 60px;
+  }
+
+  .map-img {
+    display: block;
+  }
+
+  .map-img-mobile {
+    display: none;
+  }
+
+  .modal-close-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .modal-body-locations p,
+  .modal-body-franchise-header {
+    font-size: var(--XL-text-size);
+    line-height: 1.4;
+  }
+
+  .modal-body-franchise-header {
+    text-align: center;
+  }
+
+  .modal-body-franchise-paragraph {
+    font-size: 16px;
+  }
+
+  .modal-btn {
+    margin-top: 32px;
+  }
+
+  .franchise-form-wrapper input {
+    margin-bottom: 16px;
+  }
+
+  .franchise-form-wrapper textarea {
+    min-height: 64px;
+  }
+
+  .franchise-form-wrapper input,
+  .franchise-form-wrapper textarea {
+    max-width: 368px;
+    width: 100%;
+    padding: 11px 16px;
+    border-radius: 10px;
+    border: 1px solid var(--bggreen);
+    background: var(--inputbg);
+    color: var(--dark-black);
+    font-family: var(--font-standard);
+    font-size: var(--M-text-size);
+    line-height: 1.4;
+  }
+
+  .franchise-form-wrapper {
+    display: block;
+    margin: 32px 0 0;
   }
 }
 
