@@ -26,7 +26,7 @@
 .contact-item-category {
   background-color: var(--yellow);
   text-transform: uppercase;
-  line-height: 0.85;
+  line-height: 1.2;
   border-radius: 4px;
   padding: 4px 22px;
   margin-bottom: 20px;
@@ -34,7 +34,7 @@
 }
 
 .contact-item-paragraph {
-  line-height: 0.55;
+  line-height: 1.86;
 }
 
 .contact-item-address {
@@ -49,7 +49,7 @@
   color: var(--milkshakebg);
   text-decoration: none;
   font-style: normal;
-  line-height: 0.55;
+  line-height: 1.83;
 }
 
 .contact-item-address a:hover,
@@ -64,7 +64,7 @@
 .contact-item-hours {
   color: var(--button-disabled);
   margin: 0 0 8px 0;
-  line-height: 0.55;
+  line-height: 1.86;
 }
 
 .contact-info-wrapper {
@@ -79,7 +79,7 @@
 .contact-link-mail a {
   text-decoration: none;
   color: #131313;
-  line-height: 0.625;
+  line-height: 1.6;
 }
 
 .contact-link-tel {
@@ -100,7 +100,7 @@
   font-family: 'Montserrat';
   font-size: var(--M-text-size);
   font-weight: var(--font-wieght-M);
-  line-height: 0.8;
+  line-height: 1.29;
   text-align: center;
   border: 2px solid var(--yellow);
 }
@@ -154,7 +154,7 @@
 
   .contact-item-category {
     padding: 4px 10px;
-    line-height: 0.85;
+    line-height: 1.4;
   }
 
   .contact-item-address {
@@ -187,7 +187,7 @@
   }
 
   .contact-item-category {
-    line-height: 0.72;
+    line-height: 1.4;
   }
 
   .contact-item-address {
