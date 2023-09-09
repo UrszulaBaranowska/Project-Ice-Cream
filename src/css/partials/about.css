@@ -1,0 +1,143 @@
+html{
+    --about-backround-color: #84A178;
+    --circle-color: #F8D24E;
+    --big-circle-1: #F8D24EB2;
+    --big-circle-2: #D9D9D9;
+    --white: #fff;
+    --black: #000;
+    --color-of-text: #FCFCFC;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.about{
+    background-color: var(--about-backround-color);
+}
+.upper-title-about{
+    color: #FCFCFC;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 61px;
+    margin-bottom: 12px;
+}
+.title-of-about{
+    width: 200px;
+    color: #FCFCFC;
+    text-align: center;
+    font-family: Seymour One;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-inline: auto;
+    margin-bottom: 40px;
+}
+.cow-image{
+    width: 278.996px;
+    height: 278px;
+    flex-shrink: 0;
+    border-radius: 140px;
+    box-shadow: 0 -30px var(--big-circle-1);
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 54px;
+}
+.about-description{
+    width: 220px;
+    color: #FCFCFC;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 176%; /* 21.12px */
+    letter-spacing: 0.48px;
+    display: block;
+    margin-inline: auto;
+    margin-bottom: 4px;
+}
+.about-button{
+    width: 164px;
+    height: 42px;
+    flex-shrink: 0;
+    color: var(--black);
+    background-color: var(--circle-color);
+    border: none;
+    border-radius: 10px;
+    padding-block: 15px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.about-button:hover{
+    background-color: #0A8817;
+}
+.about-button:focus{
+    background-color: #0A8817;
+    color: var(--white);
+    fill: var(--white);
+}
+.about-button-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;   
+}
+.arrow-icon{
+    width: 12px;
+    height: 12px;
+    
+}
+/*480px / mobile*/
+@media screen and (min-width: 480px){
+    .about{
+        min-width: 480px;
+    }
+}
+/*768px / tablet*/
+@media screen and (min-width: 768px){
+    .about{
+        position: relative;
+        min-width: 768px;
+    }  
+    .spans-with-descriptions-about{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        
+    }
+    .about-description{
+        margin-inline: 0;
+        display: flex;
+        flex-direction: column;
+        float: right;
+
+        
+    }
+    .cow-image{
+        background-image: url(image/cow-for-tablet.png);
+        position: absolute;
+        left: 32px;
+        width: 330px;
+        height: 330px;
+        flex-shrink: 0;
+        box-shadow: 0 0;
+        margin-inline: unset ;
+    }
+    .about-button-div{
+        margin-inline: 0;
+        
+    }
+    
+}
+@media screen and (min-width: 1200px){
+    
+}
