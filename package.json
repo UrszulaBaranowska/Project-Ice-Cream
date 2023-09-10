@@ -2,7 +2,7 @@
   "name": "parcel-project-template",
   "version": "1.1.0",
   "description": "",
-  "homepage": "https://urszulabaranowska.github.io/Project-Ice-Cream",
+  "homepage": "https://UrszulaBaranowska.github.io/Project-Ice-Cream",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /Project-Ice-Cream/"
