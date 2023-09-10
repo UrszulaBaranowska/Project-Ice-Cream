@@ -26,7 +26,7 @@
   --font-standard: 'Montserrat', sans-serif;
   --font-special: 'Seymour One', sans-serif;
 }
-.body {
+body {
   font-size: 16px;
   font-family: var(--font-standard);
   background-color: var(--bggreen);
