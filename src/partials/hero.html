@@ -1,32 +1,49 @@
-
-<div class="container">
-  <section>
-  <h1 class="hero-title">Ice cream made with <span>passion</span></h1>
-  <button class="hero-button" href="#" type="button">Products</button>
-  <a class="hero-link" href="#">How it's made?</a>
-  <p class="hero-number">16</p>
-  <p class="hero-cafe-text">cafes</p>
-  <p class="hero-number">23</p>
-  <p class="hero-cafe-text">food trucks</p>
-  <img
-  src="/src/images/Hero/hero-plate-desktop-1x.png"
-  class="hero-plate"
-    alt="plate with ice-creams and fruits"
-    srcset="
-      /src/images/Hero/hero-plate-tab-2x.png     2x,
-      /src/images/Hero/hero-plate-desktop-1x.png 1x,
-      /src/images/Hero/hero-plate-desktop-2x.png 2x
-    "
-    sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
-  />
-  <p class="hero-text">
-    Indulge in a scoop of ice cream made with passion and treat your taste buds to an unforgettable
-    experience!
-  </p>
+<section class="hero-section">
+  <div class="container">
+    <div class="hero-title-box">
+      <h1 class="hero-title">Ice cream made with <span>passion</span></h1>
+      <div class="hero-quantity-places">
+        <div class="flex-cafes">
+          <p class="hero-number">16</p>
+          <p class="hero-cafe-text">cafes</p>
+        </div>
+        <div class="flex-cafes">
+          <p class="hero-number">23</p>
+          <p class="hero-cafe-text">food trucks</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-button-link">
+      <button class="hero-button button" href="#" type="button">Products</button>
+      <a class="hero-link" href="#">How it's made?</a>
+    </div>
+    <div class="hero-plate-text">
+      <img
+        src="/src/images/Hero/hero-plate-desktop-1x.png"
+        class="hero-plate"
+        alt="plate with ice-creams and fruits"
+        srcset="
+          /src/images/Hero/hero-plate-tab-2x.png     2x,
+          /src/images/Hero/hero-plate-desktop-1x.png 1x,
+          /src/images/Hero/hero-plate-desktop-2x.png 2x
+        "
+        sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
+      />
+      <div class="hero-text-svg">
+        <p class="hero-text">
+          Indulge in a scoop of ice cream made with passion and treat your taste buds to an
+          unforgettable experience!
+        </p>
+        <svg width="40" height="16">
+          <use href="/src/images/Hero/hero.svg#icon-Arrow-hero"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
   <div class="hero-background">
     <img
-    src="/src/images/Hero/hero-mobile-1x.png"
-    class="hero-icecream"
+      src="/src/images/Hero/hero-mobile-1x.png"
+      class="hero-icecream"
       alt="ice-cream balls, with smiles"
       srcset="
         /src/images/Hero/hero-mobile-2x.png  2x,
@@ -39,4 +56,3 @@
     />
   </div>
 </section>
-</div>
