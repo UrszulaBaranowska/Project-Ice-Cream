@@ -96,7 +96,7 @@
   box-shadow: 0px 5.342193126678467px 20.033222198486328px 0px rgba(10, 136, 23, 0.25);
   z-index: 1;
 }
-.poducts__list--color-yellow::after {
+.products__list--color-yellow::after {
   content: '';
   position: absolute;
   top: -97px;

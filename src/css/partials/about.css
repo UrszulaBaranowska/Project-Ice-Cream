@@ -155,7 +155,6 @@
 @media screen and (min-width: 1200px){
     .db-about {
         margin-left:616px;
-        width:463px;
     }
     .about{
         min-width: 1200px;
@@ -165,9 +164,14 @@
         margin-bottom: 172px;
     }
     .about-description{
-        font-size: 12px;
+        font-size: 16px;
         letter-spacing: 0.64px;
         padding-bottom: 4px;
+        margin-inline:inherit;
+        width:463px;
+    }
+    .about-descriptions-2 {
+        font-size:14px;
     }
         .spans-with-descriptions-about{
             width:463px;
