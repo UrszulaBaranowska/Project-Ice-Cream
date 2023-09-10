@@ -153,6 +153,10 @@
     }
 }
 @media screen and (min-width: 1200px){
+    .db-about {
+        margin-left:616px;
+        width:463px;
+    }
     .about{
         min-width: 1200px;
     }
@@ -164,8 +168,11 @@
         font-size: 12px;
         letter-spacing: 0.64px;
         padding-bottom: 4px;
-
     }
+        .spans-with-descriptions-about{
+            width:463px;
+        }
+    
     .big-circle{
         width: 490px;
         height: 490px;
