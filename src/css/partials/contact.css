@@ -11,6 +11,7 @@
   letter-spacing: 0.48px;
   color: var(--dark-black);
   font-size: var(--S-text-size);
+  margin-top: -353px;
 }
 
 .contact-item {
@@ -244,6 +245,7 @@
     gap: 16px;
     margin: 0;
     margin-bottom: 40px;
+    margin-top: -299px;
   }
 
   .contact-item {
@@ -341,6 +343,7 @@
     display: flex;
     gap: 32px;
     margin-bottom: 60px;
+    margin-top: -128px;
   }
 
   .contact-item {
