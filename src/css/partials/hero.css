@@ -38,6 +38,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  color: var(--main-black);
 }
 .hero-button:hover {
   border: 2px solid var(--button-hover-focus);
