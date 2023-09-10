@@ -2,6 +2,7 @@
   --main-black: #000;
   --dark-black: #131313;
   --main-white: #fcfcfc;
+  --simple-white: #fff;
   --yellow: #f8d24e;
   --bggreen: #84a178;
   --icecreambg: #aec6a5;
@@ -25,11 +26,11 @@
   --font-standard: 'Montserrat', sans-serif;
   --font-special: 'Seymour One', sans-serif;
 }
-.body {
-  font-size:16px;
+body {
+  font-size: 16px;
   font-family: var(--font-standard);
   background-color: var(--bggreen);
-  }
+}
 * {
   list-style: none;
   margin: 0;
