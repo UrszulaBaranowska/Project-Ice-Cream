@@ -123,7 +123,8 @@
     }
     .about-description{
         width: 334px;
-        
+        text-align: unset;
+
     }
     .big-circle{
         position: absolute;
@@ -145,13 +146,28 @@
     }
     .about-button-div{
         margin-inline: 0;
+        justify-content: flex-start;
+    }
+    .db-about{
+        display: flex;
+        flex-direction: column;
+
+        align-content: flex-end;
+        width: 334px; 
+        margin-left: 500px;
         
     }
-    
 }
 @media screen and (min-width: 1200px){
     .about{
         min-width: 1200px;
     }
-    
+    .about-description{
+        font-size: 12px;
+        letter-spacing: 0.64px;
+
+    }
+    .cow-image{
+        
+    }
 }
