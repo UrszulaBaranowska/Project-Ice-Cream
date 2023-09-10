@@ -6,7 +6,7 @@
   background-position: bottom right;
 }
 .hero-title {
-  max-width: 247px;
+  width: 247px;
   font-family: var(--font-special);
   font-size: 26px;
   font-style: normal;
@@ -123,13 +123,14 @@
 .hero-icecream {
   width: auto;
   height: 217px;
-  padding-right: 60px;
+  padding-right: 40px;
 }
 /*------------MEDIA-MOBILE------------*/
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .hero-section {
     max-height: 415px;
+    max-width: 480px;
   }
   .hero-icecream {
     height: 267px;
@@ -188,13 +189,11 @@
     width: auto;
   }
   .hero-background {
-    /* background-image: url('/src/images/Hero/dots-tab-1x.png');
-    background-position: bottom; */
     margin-top: -316px;
   }
   .hero-icecream {
     height: 329px;
-    padding-right: 92px;
+    padding-right: 72px;
   }
   .hero-text {
     display: block;
@@ -208,5 +207,105 @@
     display: flex;
     align-items: center;
     gap: 32px;
+  }
+}
+
+/*------------MEDIA-DESKTOP-----------*/
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    background-image: url('/src/images/Hero/dots-desk-1x.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto 383px;
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url('/src/images/Hero/dots-desk-2x.png');
+    }
+  }
+  .hero-title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 45px;
+  }
+  .hero-title {
+    margin-top: 0;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.52px;
+    text-transform: uppercase;
+    width: 367px;
+  }
+  .hero-link {
+    padding: 12px 21px;
+  }
+  .hero-icecream {
+    height: 560px;
+    padding-right: 76px;
+  }
+  .hero-background {
+    margin-top: -500px;
+  }
+  .hero-quantity-places {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 16px;
+    margin-bottom: -28px;
+  }
+  .flex-cafes {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .hero-button-link {
+    margin-top: 28px;
+    margin-bottom: 45px;
+  }
+  .hero-plate {
+    display: block;
+    height: 225px;
+    width: auto;
+  }
+  .hero-text {
+    display: block;
+    color: #fff;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .hero-text-svg {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+  }
+  .hero-plate-text {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  .hero-number {
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.84px;
+    text-transform: uppercase;
+  }
+  .hero-cafe-text {
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
