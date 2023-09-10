@@ -83,3 +83,31 @@ a {
   background-color: #00000033;
   z-index: 2;
 }
+
+.gallery-reviews-wrapper {
+  background-image: linear-gradient(#84a278, #84a278 24px, rgba(0, 0, 0, 0) 24px),
+    url(/src/images/products/background_mobile.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-reviews-wrapper {
+    min-height: 1122px;
+    background-image: linear-gradient(#84a278, #84a278 164px, rgba(0, 0, 0, 0) 164px),
+      url(/src/images/products/background_mobile.jpg);
+    background-size: contain;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-reviews-wrapper {
+    min-height: 1110px;
+    background-image: linear-gradient(#84a278, #84a278 95px, rgba(0, 0, 0, 0) 95px),
+      url(/src/images/products/background_mobile.jpg);
+    background-size: contain;
+    margin-top: 80px;
+  }
+}
