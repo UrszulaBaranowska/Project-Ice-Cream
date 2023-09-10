@@ -1,0 +1,154 @@
+@import url(global.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.about{
+    background-color: var(--bggreen);
+    position: relative;
+}
+.upper-title-about{
+    color: var(--main-white);
+    text-align: center;
+    font-family: var(--font-standard);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 61px;
+    margin-bottom: 12px;
+}
+.title-of-about{
+    width: 200px;
+    color: var(--main-white);
+    text-align: center;
+    font-family: var(--font-special);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-inline: auto;
+    margin-bottom: 40px;
+}
+.big-circle{
+    border-radius: 165px;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.70) 0%, rgba(248, 210, 78, 0.70) 100%), #D9D9D9;
+    box-shadow: 0px 5.30813px 19.90548px 0px rgba(153, 114, 23, 0.25);
+    width: 278.996px;
+    height: 278px;
+    flex-shrink: 0;
+    justify-content: center;
+    margin-inline: auto;
+}
+.cow-image{
+    width: 278.996px;
+    height: 278px;
+    flex-shrink: 0;
+    border-radius: 140px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 54px;
+    margin-top: -256px;
+}
+.about-description{
+    width: 220px;
+    color: var(--main-white);
+    text-align: center;
+    font-family: var(--font-standard);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 176%; /* 21.12px */
+    letter-spacing: 0.48px;
+    display: block;
+    margin-inline: auto;
+    margin-bottom: 4px;
+}
+.about-button{
+    width: 164px;
+    height: 42px;
+    flex-shrink: 0;
+    color: var(--black);
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 10px;
+    padding-block: 15px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.about-button:hover{
+    background-color: var(--button-hover-focus);
+}
+.about-button:focus{
+    background-color: var(--button-hover-focus);
+    color: #fff;
+    fill: #fff;
+}
+.about-button-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;   
+}
+.arrow-icon{
+    width: 12px;
+    height: 12px;
+    
+}
+/*480px / mobile*/
+@media screen and (min-width: 480px){
+    .about{
+        min-width: 480px;
+    }
+}
+/*768px / tablet*/
+@media screen and (min-width: 768px){
+    .about{
+        position: relative;
+        min-width: 768px;
+    }  
+    .spans-with-descriptions-about{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        
+    }
+    .about-description{
+        margin-inline: 0;
+        display: flex;
+        flex-direction: column;
+        float: right;
+
+        
+    }
+    .big-circle{
+        position: absolute;
+        left: 32px;
+        margin-top: -24px;
+        width: 330px;
+        height: 330px;
+        flex-shrink: 0;
+    }
+    .cow-image{
+        position: absolute;
+        left: 32px;
+        width: 330px;
+        height: 330px;
+        flex-shrink: 0;
+        box-shadow: 0 0;
+        margin-inline: unset ;
+        margin-top: unset;
+    }
+    .about-button-div{
+        margin-inline: 0;
+        
+    }
+    
+}
+@media screen and (min-width: 1200px){
+    
+}
