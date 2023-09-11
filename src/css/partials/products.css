@@ -217,3 +217,233 @@
     }
   }
 
+/* ------- modal -------- */
+
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+    transform: scale;
+    visibility: visible;
+  }
+  .is-hidden {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 280px;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    background-color: #fcfcfc;
+    border: 2px solid #f8d24e;
+    border-radius: 10px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 20px;
+    flex-shrink: 0;
+    max-height: 100%;
+    overflow: auto;
+  }
+  .modal_btn-svg {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 0;
+  }
+  .forms {
+    border: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+    display: flex;
+  }
+  .forms_title {
+    text-align: center;
+    letter-spacing: 0;
+    margin-bottom: 24px;
+    font-family: Seymour One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .forms_img {
+    background-color: #9cbe8f;
+    border-radius: 50%;
+    padding-bottom: 7px;
+    box-shadow: 0 5.26027px 19.726px #0a881740;
+  }
+  .forms_nutrition {
+    flex-flow: wrap;
+    gap: 9px;
+    margin-bottom: 32px;
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+  .forms_nutrition-item {
+    border: 2px solid #9cbe8f;
+    border-radius: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    width: 53px;
+    height: 72px;
+  }
+  .forms_nutrition-item p {
+    letter-spacing: 0%;
+    width: 43px;
+    height: 43px;
+    background: #9cbe8f;
+    border: 2px solid #9cbe8f;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserat;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 28px;
+    display: flex;
+    box-shadow: 0 11px 13px -7px #9cbe8f;
+    margin: 1px 5px 0px 5px;
+  }
+  .forms_nutrition-item span {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .forms_ingredients {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .forms_ingredients p {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+  }
+  .forms_ingredients-list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 11px;
+    list-style: none;
+    padding: 0;
+  }
+  .forms_ingredients-item {
+    display: flex;
+    letter-spacing: 0.04em;
+    text-align: center;
+    justify-content: space-between;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.64px;
+  }
+  .forms_item {
+    display: flex;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.6px;
+  }
+  .forms_item input {
+    width: 240px;
+    height: 42px;
+    border-radius: 10px;
+    border: 1px solid #84a178;
+    background: rgba(248, 210, 78, 0.1);
+    padding: 11px 10px;
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .forms_comment textarea {
+    border-radius: 10px;
+    padding: 11px 10px;
+    line-height: 1.4;
+    width: 240px;
+    height: 84px;
+    border-radius: 10px;
+    border: 1px solid #84a178;
+    background: rgba(248, 210, 78, 0.1);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.6px;
+  }
+  .forms_submit-button {
+    width: auto;
+    margin-top: 24px;
+    padding: 12px 34px;
+    border-radius: 10px;
+    background: #f8d24e;
+    border: none;
+    width: 132px;
+    height: 42px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) and (min-width: 768px) and (max-width: 1200px) {
+    .modal {
+      width: 528px;
+      padding: 40px;
+      top: 50%;
+      left: 50%;
+    }
+    .forms_nutrition {
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+    .forms_nutrition-item {
+      gap: 6px;
+      padding-bottom: 14px;
+      width: 65px;
+      height: 90px;
+    }
+    .forms_nutrition-item p {
+      width: 53px;
+      height: 53px;
+      margin: 0 6px;
+    }
+    .forms_ingredients {
+      margin-bottom: 48px;
+    }
+    .forms_item {
+      width: 368px;
+    }
+    .forms_item input {
+      width: 368px;
+    }
+    .forms_comment{
+      width: 368px;
+    }
+    .forms_submit-button{
+      margin-top: 32px;
+      width: 121px;
+    }
+  }
