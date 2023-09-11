@@ -200,6 +200,7 @@
     display: block;
     height: 152px;
     width: auto;
+    animation: animowany_tekst 5s linear infinite;
   }
   .hero-background {
     margin-top: -316px;
@@ -283,6 +284,7 @@
     display: block;
     height: 225px;
     width: auto;
+    animation: animowany_tekst 5s linear infinite;
   }
   .hero-text {
     display: block;
@@ -320,5 +322,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+}
+
+@keyframes animowany_tekst {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
