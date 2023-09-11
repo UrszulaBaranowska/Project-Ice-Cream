@@ -27,6 +27,11 @@
   </head>
 
   <body>
+    <button onclick="topFunction()" id="top-btn" title="Top">
+      <svg class="footer-page__icon" width="20px" height="20px">
+        <use href="./images/icons.svg#icon-arrow-up"></use>
+      </svg>
+    </button>
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. Pilnuj kolejności plików według układu strony -->
     <include src="./partials/header.html"></include>
     <include src="./partials/mobile-menu.html"></include>
@@ -46,6 +51,7 @@
     <script src="./js/modal-our-locations.js"></script>
     <script src="./js/modal-franchise.js"></script>
     <script src="./js/slider-reviews.js"></script>
+    <script src="./js/top-btn.js"></script>
     <script src="./index.js" type="module"></script>
   </body>
 </html>
