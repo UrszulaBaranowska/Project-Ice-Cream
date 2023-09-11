@@ -101,12 +101,26 @@
     
 }
 .backdrop{
+	position: fixed;
+	inset: 0;
+	background-color: rgb(0 0 0 / 0.5);
+	opacity: 1;
+	pointer-events: all;
+	visibility: visible;
+	transition: opacity 250ms;
+}
+.modal-body{
     width: 280px;
 height: 459px;
 flex-shrink: 0;
 border-radius: 10px;
 border: 2px solid #F8D24E;
 background: #FCFCFC;
+}
+.modal-close{
+    width: 20px;
+    height: 20px;
+
 }
 .is-hidden {
 	opacity: 0;
@@ -119,6 +133,15 @@ background: #FCFCFC;
 
 .modal:not(.is-hidden) .modal-body {
 	scale: 1;
+}
+.modal-lorem-about{
+    color: #131313;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    width: 224px;
 }
 /*480px / mobile*/
 @media screen and (min-width: 480px){
