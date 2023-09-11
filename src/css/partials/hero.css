@@ -39,13 +39,19 @@
   font-weight: 600;
   line-height: normal;
   color: var(--main-black);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover {
   border: 2px solid var(--button-hover-focus);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:focus {
   border: 2px solid var(--button-hover-focus);
   color: var(--main-white);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:disabled {
   border: 2px solid var(--button-disabled);
@@ -58,12 +64,18 @@
   font-weight: 600;
   line-height: normal;
   text-decoration-line: underline;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-link:hover {
   color: var(--button-hover-focus);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-link:focus {
   color: var(--main-white);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-link:disabled {
   color: var(--button-disabled);
@@ -188,7 +200,6 @@
     display: block;
     height: 152px;
     width: auto;
-    
   }
   .hero-background {
     margin-top: -316px;

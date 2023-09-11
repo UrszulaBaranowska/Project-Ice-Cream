@@ -1,72 +1,143 @@
-<div class="container">
-    <section class="about" id="about">
-            <p class="upper-title-about">tradition and love</p>
-            <h2 class="title-of-about">how it’s made?</h2>
-            <p class="big-circle"></p>
-            <img class="cow-image" src="./images/about/cow-for-mobile.png" alt="cow picture">
-            <div class="db-about">
-                <div class="spans-with-descriptions-about">
-                    <span class="about-description">
-                        Ice is a place where you will become not only a
-                        little happier, but also healthier. Health is the main value for us, and we follow
-                        it when creating our handmade desserts.
-                    </span>
-                    <span class="about-description about-descriptions-2">
-                        We use traditional recipes and 100% natural ingredients. Our products are so natural
-                        that they can be given to children from the age of three years. Sweets lovers can expect
-                        55 types of ice cream, 15 types of coffee and 23 milkshakes.
-                    </span>
-                    <span class="about-description about-descriptions-2">
-                        This is enough to choose ice cream and coffee for any mood!
-                    </span>
-                </div>
-                <div class="about-button-div">
-                    <button class="about-button" type="button" data-modal-open-3>Read more<svg class="arrow-icon">
-                            <use href="./images/about/about-svg.svg#icon-right_arrow"></use>
-                        </svg></button>
-                </div>
-            </div>
-    </section>
-</div>
-<div class="backdrop is-hidden" data-modal-3>
-    <div class="modal-body">
-      <p class="modal-title">How it’s made?</p>
-      <button type="button" class="modal-close" data-modal-close-3>X</button>
-      <div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="36"
-          height="36"
-          viewBox="0 0 36 36"
-          fill="none"
-        >
-          <g clip-path="url(#clip0_1175_143)">
-            <path
-              d="M32.1601 16.08L8.94007 4.47001C8.62682 4.32487 8.28224 4.26039 7.93771 4.28244C7.59318 4.30448 7.25963 4.41235 6.96743 4.59621C6.67523 4.78008 6.43365 5.03411 6.2647 5.33518C6.09574 5.63625 6.00477 5.9748 6.00007 6.32001V29.53C5.99714 29.8844 6.08568 30.2335 6.25712 30.5436C6.42856 30.8538 6.6771 31.1144 6.97873 31.3004C7.28036 31.4864 7.62487 31.5915 7.97896 31.6054C8.33305 31.6194 8.68475 31.5417 9.00007 31.38L32.1601 19.77C32.5031 19.5978 32.7916 19.3336 32.9931 19.0069C33.1947 18.6802 33.3014 18.3039 33.3014 17.92C33.3014 17.5361 33.1947 17.1598 32.9931 16.8331C32.7916 16.5064 32.5031 16.2422 32.1601 16.07V16.08Z"
-              fill="#FCFCFC"
-            />
-          </g>
-          <defs>
-            <clipPath id="clip0_1175_143">
-              <rect width="36" height="36" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
+<section class="about" id="about">
+  <div class="container">
+    <p class="upper-title-about">tradition and love</p>
+    <h2 class="title-of-about">how it’s made?</h2>
+    <div class="img-wrapper">
+      <p class="big-circle"></p>
+      <img class="cow-image" src="./images/about/cow-for-mobile.png" alt="cow picture" />
+    </div>
+    <div class="db-about">
+      <div class="spans-with-descriptions-about">
+        <span class="about-description">
+          Ice is a place where you will become not only a little happier, but also healthier. Health
+          is the main value for us, and we follow it when creating our handmade desserts.
+        </span>
+        <span class="about-description about-descriptions-2">
+          We use traditional recipes and 100% natural ingredients. Our products are so natural that
+          they can be given to children from the age of three years. Sweets lovers can expect 55
+          types of ice cream, 15 types of coffee and 23 milkshakes.
+        </span>
+        <span class="about-description about-descriptions-2">
+          This is enough to choose ice cream and coffee for any mood!
+        </span>
       </div>
-      <div class="modal-video-about">
-      <video
-        src=""
-        width="224"
-        height="199"
-        controls
-        loop
-        preload="auto"
-        ></video></div>
-      <p class="modal-lorem-about">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus et molestias
-        aliquid unde omnis aut quidem, ab praesentium porro? Nisi eius debitis consectetur, ad
-        reprehenderit quisquam recusandae autem cupiditate beatae porro.
-      </p>
+      <div class="about-button-div">
+        <button type="button" class="about-button" data-modal-open-3>
+          Read more
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+          >
+            <path
+              d="M3.1912 1.22012C3.06877 1.3611 3 1.55229 3 1.75163C3 1.95098 3.06877 2.14217 3.1912 2.28315L6.42372 6.00454L3.1912 9.72592C3.07224 9.86771 3.00642 10.0576 3.00791 10.2547C3.0094 10.4519 3.07808 10.6404 3.19915 10.7798C3.32023 10.9192 3.48402 10.9983 3.65524 11C3.82647 11.0017 3.99143 10.9259 4.11459 10.789L7.8088 6.53606C7.93123 6.39508 8 6.20389 8 6.00454C8 5.80519 7.93123 5.614 7.8088 5.47302L4.11459 1.22012C3.99213 1.07918 3.82606 1 3.65289 1C3.47973 1 3.31366 1.07918 3.1912 1.22012Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+
+        <div class="backdrop is-hidden" data-modal-3>
+          <div class="modal-body">
+            <p class="modal-title">How it’s made?</p>
+            <button type="button" class="modal-close" data-modal-close-3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="modal-close-icon"
+              >
+                <g clip-path="url(#clip0_10674_17396)">
+                  <path
+                    d="M12.9398 12L18.4665 6.47329C18.5757 6.34576 18.6328 6.18171 18.6263 6.01393C18.6198 5.84614 18.5503 5.68698 18.4315 5.56825C18.3128 5.44952 18.1536 5.37997 17.9859 5.37349C17.8181 5.36701 17.654 5.42408 17.5265 5.53329L11.9998 11.06L6.47315 5.52663C6.34762 5.40109 6.17735 5.33057 5.99982 5.33057C5.82228 5.33057 5.65202 5.40109 5.52649 5.52663C5.40095 5.65216 5.33042 5.82243 5.33042 5.99996C5.33042 6.1775 5.40095 6.34776 5.52649 6.47329L11.0598 12L5.52649 17.5266C5.4567 17.5864 5.40002 17.6599 5.36 17.7426C5.31999 17.8254 5.2975 17.9154 5.29395 18.0073C5.29041 18.0991 5.30588 18.1906 5.33939 18.2762C5.37291 18.3617 5.42375 18.4394 5.48872 18.5044C5.55369 18.5694 5.63139 18.6202 5.71694 18.6537C5.80249 18.6872 5.89404 18.7027 5.98585 18.6992C6.07767 18.6956 6.16776 18.6731 6.25047 18.6331C6.33318 18.5931 6.40672 18.5364 6.46649 18.4666L11.9998 12.94L17.5265 18.4666C17.654 18.5758 17.8181 18.6329 17.9859 18.6264C18.1536 18.62 18.3128 18.5504 18.4315 18.4317C18.5503 18.3129 18.6198 18.1538 18.6263 17.986C18.6328 17.8182 18.5757 17.6542 18.4665 17.5266L12.9398 12Z"
+                    fill="#131313"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_10674_17396">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+
+            <div class="video-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                class="play-icon"
+              >
+                <g clip-path="url(#clip0_1175_143)">
+                  <path
+                    d="M32.1601 16.08L8.94007 4.47001C8.62682 4.32487 8.28224 4.26039 7.93771 4.28244C7.59318 4.30448 7.25963 4.41235 6.96743 4.59621C6.67523 4.78008 6.43365 5.03411 6.2647 5.33518C6.09574 5.63625 6.00477 5.9748 6.00007 6.32001V29.53C5.99714 29.8844 6.08568 30.2335 6.25712 30.5436C6.42856 30.8538 6.6771 31.1144 6.97873 31.3004C7.28036 31.4864 7.62487 31.5915 7.97896 31.6054C8.33305 31.6194 8.68475 31.5417 9.00007 31.38L32.1601 19.77C32.5031 19.5978 32.7916 19.3336 32.9931 19.0069C33.1947 18.6802 33.3014 18.3039 33.3014 17.92C33.3014 17.5361 33.1947 17.1598 32.9931 16.8331C32.7916 16.5064 32.5031 16.2422 32.1601 16.07V16.08Z"
+                    fill="#FCFCFC"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1175_143">
+                    <rect width="36" height="36" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <p class="modal-lorem-about">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus et
+              molestias aliquid unde omnis aut quidem, ab praesentium porro? Nisi eius debitis
+              consectetur, ad reprehenderit quisquam recusandae autem cupiditate beatae porro.
+            </p>
+          </div>
+        </div>
+
+        <!-- <div class="about-button-div">
+        <button class="about-button" type="button" data-modal-open-3>
+          Read more<svg class="arrow-icon">
+            <use href="./images/about/about-svg.svg#icon-right_arrow"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="backdrop is-hidden" data-modal-3>
+        <div class="modal-body">
+          <p class="modal-title">How it’s made?</p>
+          <button type="button" class="modal-close" data-modal-close-3>X</button>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_1175_143)">
+                <path
+                  d="M32.1601 16.08L8.94007 4.47001C8.62682 4.32487 8.28224 4.26039 7.93771 4.28244C7.59318 4.30448 7.25963 4.41235 6.96743 4.59621C6.67523 4.78008 6.43365 5.03411 6.2647 5.33518C6.09574 5.63625 6.00477 5.9748 6.00007 6.32001V29.53C5.99714 29.8844 6.08568 30.2335 6.25712 30.5436C6.42856 30.8538 6.6771 31.1144 6.97873 31.3004C7.28036 31.4864 7.62487 31.5915 7.97896 31.6054C8.33305 31.6194 8.68475 31.5417 9.00007 31.38L32.1601 19.77C32.5031 19.5978 32.7916 19.3336 32.9931 19.0069C33.1947 18.6802 33.3014 18.3039 33.3014 17.92C33.3014 17.5361 33.1947 17.1598 32.9931 16.8331C32.7916 16.5064 32.5031 16.2422 32.1601 16.07V16.08Z"
+                  fill="#FCFCFC"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1175_143">
+                  <rect width="36" height="36" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="modal-video-about">
+            <video src="" width="224" height="199" controls loop preload="auto"></video>
+          </div>
+          <p class="modal-lorem-about">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus et
+            molestias aliquid unde omnis aut quidem, ab praesentium porro? Nisi eius debitis
+            consectetur, ad reprehenderit quisquam recusandae autem cupiditate beatae porro.
+          </p>
+        </div>
+      </div> -->
+      </div>
     </div>
   </div>
-  
+</section>
