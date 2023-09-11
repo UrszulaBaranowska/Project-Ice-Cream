@@ -7,7 +7,7 @@
     color: var(--main-white);
     text-align: center;
     font-family: var(--font-standard);
-    font-size: 18px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -20,7 +20,7 @@
     color: var(--main-white);
     text-align: center;
     font-family: var(--font-special);
-    font-size: 30px;
+    font-size: 34px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -97,16 +97,15 @@
     
 }
 /*480px / mobile*/
-@media screen and (min-width: 480px){
+/* @media screen and (min-width: 480px){
     .about{
         min-width: 480px;
     }
-}
-/*768px / tablet*/
+} */
+
 @media screen and (min-width: 768px){
     .about{
         position: relative;
-        /* min-width: 768px; */
     }  
     .title-of-about{
         width: unset;
@@ -155,9 +154,7 @@
     .db-about {
         margin-left:616px;
     }
-    .about{
-        min-width: 1200px;
-    }
+
     .title-of-about{
         margin-bottom: unset;
         margin-bottom: 172px;
