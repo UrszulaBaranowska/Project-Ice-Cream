@@ -49,8 +49,8 @@ a {
   text-decoration: none;
 }
 .container {
-  min-width: 320px;
-  max-width: 480px;
+  /* min-width: 320px;
+  max-width: 480px; */
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;

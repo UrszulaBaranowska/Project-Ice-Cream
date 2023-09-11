@@ -9,6 +9,7 @@
   inset: 0;
   background-color: var(--bggreen);
   height: 100%;
+  z-index:5;
 }
 .mob-logo {
   display: flex;

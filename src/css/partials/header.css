@@ -1,9 +1,11 @@
 @import url('./global.css');
-
-.header {
+.header-container {
   display: flex;
-  gap: 208px;
+  align-items: center;
   padding-top: 12px;
+}
+.page-header {
+  width:100%;
 }
 .logo {
   display: flex;
@@ -32,6 +34,7 @@
 .hamburger-btn {
   background-color: transparent;
   border: none;
+  margin-left:auto;
 }
 .hamburger-icon {
   fill: var(--main-white);
@@ -101,6 +104,9 @@
   .header {
     gap: 440px;
   }
+  .hamburger-btn {
+    margin-right: 32px;
+  }
   .buy-button {
     display: block;
   }
@@ -122,6 +128,8 @@
     gap: 28px;
     flex-shrink: 0;
     text-wrap: nowrap;
+    margin-left:308px;
+    margin-right:205px;
   }
   .icon-ice {
     width: 28px;
