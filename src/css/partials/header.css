@@ -1,11 +1,10 @@
-
 .header-container {
   display: flex;
   align-items: center;
   padding-top: 12px;
 }
 .page-header {
-  width:100%;
+  width: 100%;
 }
 .logo {
   display: flex;
@@ -34,7 +33,7 @@
 .hamburger-btn {
   background-color: transparent;
   border: none;
-  margin-left:auto;
+  margin-left: auto;
 }
 .hamburger-icon {
   fill: var(--main-white);
@@ -58,6 +57,18 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  cursor: url('/src/images/Cursor.png'), auto;
+}
+.buy-button:hover {
+  background-color: var(--button-hover-focus);
+}
+.buy-button:focus {
+  background-color: var(--button-hover-focus);
+  color: var(--main-white);
+  fill: var(--main-white);
+}
+.buy-button:disabled {
+  background-color: var(--button-disabled);
 }
 .btn-buy-style {
   display: flex;
@@ -84,7 +95,9 @@
   font-weight: 700;
   line-height: normal;
 }
-.menu-pos:hover, :focus {
+.menu-pos:hover,
+:focus {
+  cursor: url('/src/images/Cursor.png'), auto;
   color: var(--yellow);
 }
 @media screen and (min-width: 480px) {
@@ -128,8 +141,8 @@
     gap: 28px;
     flex-shrink: 0;
     text-wrap: nowrap;
-    margin-left:308px;
-    margin-right:205px;
+    margin-left: 308px;
+    margin-right: 205px;
   }
   .icon-ice {
     width: 28px;
@@ -140,4 +153,66 @@
     margin-bottom: 6px;
     margin-left: -3px;
   }
+}
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.product-img {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-title {
+  color: var(--dark-black);
+  text-align: center;
+  font-family: Seymour One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4; /* 140% */
+}
+.modal-body-buy {
+  background-color: var(--main-white);
+  border-radius: 10px;
+  border: 2px solid var(--yellow);
+  width: calc(100% - 40px);
+  height: 644px;
+  max-width: 280px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 28px;
+}
+.buy-modal-wrapper input,
+.buy-modal-wrapper textarea {
+  max-width: 368px;
+  width: 100%;
+  padding: 8px 12px 7px;
+  border-radius: 10px;
+  border: 1px solid var(--bggreen);
+  background: var(--inputbg);
+  color: var(--dark-black);
+  font-family: var(--font-standard);
+  font-size: var(--S-text-size);
+  line-height: 1.4;
+  margin-top: 16px;
+}
+.buy-submit-btn {
+  background-color: var(--yellow);
+  width: 196px;
+  padding: var(--S-text-size);
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-size: var(--M-text-size);
+  font-weight: var(--font-wieght-M);
+  line-height: 1.29;
+  text-align: center;
+  border: 2px solid var(--yellow);
+  margin-top: 24px;
+  padding: 12px 34px;
+  width: auto;
 }

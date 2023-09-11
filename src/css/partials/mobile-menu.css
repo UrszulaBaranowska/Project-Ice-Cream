@@ -9,7 +9,7 @@
   inset: 0;
   background-color: var(--bggreen);
   height: 100%;
-  z-index:5;
+  z-index: 5;
 }
 .mob-logo {
   display: flex;
@@ -52,8 +52,10 @@
   font-weight: 700;
   line-height: normal;
 }
-.menu-mob-pos:hover, :focus {
+.menu-mob-pos:hover,
+.menu-mob-pos:focus {
   color: var(--main-black);
+  cursor: url('/src/images/Cursor.png'), auto;
 }
 .menu-mob-style {
   display: flex;
@@ -78,6 +80,17 @@
   line-height: normal;
   margin-top: 110px;
   margin-inline: auto;
+}
+.mobile-buy-button:hover {
+  background-color: var(--button-hover-focus);
+}
+.mobile-buy-button:focus {
+  background-color: var(--button-hover-focus);
+  color: var(--main-white);
+  fill: var(--main-white);
+}
+.mobile-buy-button:disabled {
+  background-color: var(--button-disabled);
 }
 .menu-close-btn {
   background-color: transparent;
