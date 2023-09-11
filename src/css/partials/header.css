@@ -1,4 +1,4 @@
-@import url('./global.css');
+
 .header-container {
   display: flex;
   align-items: center;
@@ -84,7 +84,7 @@
   font-weight: 700;
   line-height: normal;
 }
-.current {
+.menu-pos:hover, :focus {
   color: var(--yellow);
 }
 @media screen and (min-width: 480px) {

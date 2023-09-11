@@ -52,7 +52,7 @@
   font-weight: 700;
   line-height: normal;
 }
-.mob-current {
+.menu-mob-pos:hover, :focus {
   color: var(--main-black);
 }
 .menu-mob-style {
