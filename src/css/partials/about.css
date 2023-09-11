@@ -96,6 +96,78 @@
     margin-left:4px;
     
 }
+.backdrop {
+	position: fixed;
+	inset: 0;
+	background-color: rgb(0 0 0 / 0.5);
+	opacity: 1;
+	pointer-events: all;
+	visibility: visible;
+	transition: opacity 250ms;
+    
+}
+
+.modal-body {
+	position: relative;
+	width: 280px;
+    flex-shrink: 0;
+    margin-inline: auto;
+	transition: scale 250ms;
+    margin-top: 80px;
+    text-align: start;
+    padding-left:24px ;
+    border-radius: 10px;
+    border: 2px solid #F8D24E;
+    background: #FCFCFC;
+    margin-inline: auto;
+}
+.modal-close {
+	width: 20px;
+    height: 20px;
+    top: 12px;
+    right: 12px;
+    border: 0;
+    cursor: pointer;
+}
+.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+}
+
+.is-hidden .modal-body {
+	scale: 0;
+}
+
+.modal:not(.is-hidden) .modal-body {
+	scale: 1;
+}
+.modal-lorem-about{
+    width: 224px;
+    color: #131313;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    margin-inline: auto;
+    padding-bottom: 28px;
+}
+.modal-title{
+    color: #131313;
+    text-align: center;
+    font-family: Seymour One;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    padding-top: 28px;
+}
+.modal-video-about{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 /*480px / mobile*/
 /* @media screen and (min-width: 480px){
     .about{
