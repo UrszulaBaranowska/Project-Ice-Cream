@@ -1,3 +1,25 @@
+.mySlides-button {
+  display: inline-block;
+  padding: 6px;
+  margin: 5px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.mySlides-button:hover {
+  background-color: #84a178;
+}
+.mySlides-button:focus {
+  background-color: #84a178;
+}
+
+.reviews-btn {
+  text-align: center;
+  margin-top: 12px;
+}
+
 .swiper {
   margin: 0 auto;
   width: 280px;
@@ -33,22 +55,8 @@
   line-height: 1.86;
 }
 
-.review-pagination {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-
-.review-pagination-item {
-  width: 12px;
-  height: 12px;
-  background-color: #d9d9d9;
-  border-radius: 100%;
-  margin-top: 12px;
-}
-
-.review-pagination-item.active {
-  background-color: var(--bggreen);
+.reviews-btn {
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
