@@ -100,6 +100,26 @@
     height: 12px;
     
 }
+.backdrop{
+    width: 280px;
+height: 459px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 2px solid #F8D24E;
+background: #FCFCFC;
+}
+.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+}
+.is-hidden .modal-body {
+	scale: 0;
+}
+
+.modal:not(.is-hidden) .modal-body {
+	scale: 1;
+}
 /*480px / mobile*/
 @media screen and (min-width: 480px){
     .about{
