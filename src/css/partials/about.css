@@ -48,7 +48,6 @@
   margin-inline: auto;
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
   margin-top: -256px;
 }
 .about-description {
@@ -177,6 +176,9 @@
 .play-icon {
   margin: 81px 94px;
 }
+.img-wrapper {
+  margin-bottom: 40px;
+}
 
 @media screen and (min-width: 768px) {
   .about {
@@ -257,7 +259,7 @@
 
   .title-of-about {
     margin-bottom: unset;
-    margin-bottom: 172px;
+    margin-bottom: 121px;
   }
   .about-description {
     font-size: 16px;
@@ -271,6 +273,7 @@
   }
   .spans-with-descriptions-about {
     width: 463px;
+    margin-top: 51px;
   }
 
   .big-circle {
@@ -281,19 +284,26 @@
       #d9d9d9;
     box-shadow: 0px 8px 30px 0px rgba(153, 114, 23, 0.25);
     position: absolute;
-    left: 32px;
-    top: 270px;
+    right: 32px;
+    top: 0;
   }
   .cow-image {
     position: absolute;
-    top: 275px;
-    left: 32px;
+    top: 0;
+    right: 32px;
     width: 490px;
     height: 490px;
+  }
+  .about-button {
+    margin-bottom: 0;
   }
   .about-button-div {
     margin-top: unset;
     margin-top: 54px;
-    margin-bottom: 146px;
+    margin-bottom: 140px;
+  }
+  .img-wrapper {
+    position: relative;
+    width: 50%;
   }
 }
