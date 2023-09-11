@@ -177,6 +177,13 @@
 .play-icon {
   margin: 81px 94px;
 }
+.about-video {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  max-width: 224px;
+  max-height: 199px;
+}
 /*480px / mobile*/
 /* @media screen and (min-width: 480px){
     .about{
@@ -254,6 +261,14 @@
   }
   .play-icon {
     margin: 84px 206px;
+  }
+  .about-video {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 448px;
+    max-height: 205px;
   }
 }
 @media screen and (min-width: 1200px) {
