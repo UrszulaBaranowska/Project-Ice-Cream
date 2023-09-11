@@ -256,8 +256,8 @@
     background: none;
     border: none;
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 10px;
+    right: 10px;
     padding: 0;
   }
   .forms {
@@ -286,12 +286,12 @@
     box-shadow: 0 5.26027px 19.726px #0a881740;
   }
   .forms_nutrition {
-    flex-flow: wrap;
     gap: 9px;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
     list-style: none;
     display: flex;
     padding: 0;
+    margin-top: 32px;
   }
   .forms_nutrition-item {
     border: 2px solid #9cbe8f;
@@ -351,6 +351,7 @@
     gap: 11px;
     list-style: none;
     padding: 0;
+    margin-top: 24px;
   }
   .forms_ingredients-item {
     display: flex;
@@ -408,7 +409,7 @@
     height: 42px;
   }
 
-  @media screen and (min-width: 480px) and (max-width: 767px) and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 480px) and (max-width: 767px), screen and (min-width: 768px) {
     .modal {
       width: 528px;
       padding: 40px;
@@ -446,4 +447,7 @@
       margin-top: 32px;
       width: 121px;
     }
+    .forms_comment textarea{
+      width: 368px;
+    } 
   }
