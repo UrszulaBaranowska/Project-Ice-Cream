@@ -200,7 +200,7 @@
     display: block;
     height: 152px;
     width: auto;
-    animation: animowany_tekst 5s linear infinite;
+    animation: animowany_tekst 10s linear infinite;
   }
   .hero-background {
     margin-top: -316px;
