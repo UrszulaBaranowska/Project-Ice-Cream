@@ -1,9 +1,3 @@
-@import url(global.css);
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 .about{
     background-color: var(--bggreen);
     position: relative;
@@ -53,7 +47,7 @@
     margin-inline: auto;
     display: flex;
     justify-content: center;
-    margin-bottom: 54px;
+    margin-bottom: 40px;
     margin-top: -256px;
 }
 .about-description{
@@ -68,7 +62,6 @@
     letter-spacing: 0.48px;
     display: block;
     margin-inline: auto;
-    margin-bottom: 4px;
 }
 .about-button{
     width: 164px;
@@ -78,9 +71,9 @@
     background-color: var(--yellow);
     border: none;
     border-radius: 10px;
-    padding-block: 15px;
     cursor: pointer;
     margin-bottom: 50px;
+    font-weight: 600;
 }
 .about-button:hover{
     background-color: var(--button-hover-focus);
@@ -93,11 +86,12 @@
 .about-button-div{
     display: flex;
     justify-content: center;
-    margin-top: 20px;   
+    margin-top: 24px;   
 }
 .arrow-icon{
     width: 12px;
     height: 12px;
+    margin-left:4px;
     
 }
 /*480px / mobile*/
@@ -114,6 +108,7 @@
     }  
     .title-of-about{
         width: unset;
+        margin-bottom:98px;
     }
     .spans-with-descriptions-about{
         display: flex;
@@ -151,14 +146,16 @@
     .db-about{
         display: flex;
         flex-direction: column;
-
         align-content: flex-end;
         width: 334px; 
-        margin-left: 500px;
+        margin-left: 400px;
         
     }
 }
 @media screen and (min-width: 1200px){
+    .db-about {
+        margin-left:616px;
+    }
     .about{
         min-width: 1200px;
     }
@@ -167,11 +164,19 @@
         margin-bottom: 172px;
     }
     .about-description{
-        font-size: 12px;
+        font-size: 16px;
         letter-spacing: 0.64px;
         padding-bottom: 4px;
-
+        margin-inline:inherit;
+        width:463px;
     }
+    .about-descriptions-2 {
+        font-size:14px;
+    }
+        .spans-with-descriptions-about{
+            width:463px;
+        }
+    
     .big-circle{
         width: 490px;
         height: 490px;
