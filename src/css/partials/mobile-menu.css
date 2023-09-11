@@ -1,0 +1,90 @@
+@import url('./global.css');
+
+.menu-mobile {
+  translate: -110% 0 0;
+  transition: var(--transition);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  inset: 0;
+  background-color: var(--bggreen);
+  height: 100%;
+}
+.mob-logo {
+  display: flex;
+  align-items: flex-end;
+}
+.mob-icon-ice {
+  width: 19px;
+  height: 38px;
+}
+.mob-ce-icon {
+  width: 32px;
+  height: 19px;
+  text-align: center;
+  font-family: Seymour One;
+  font-size: 14.874px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.487px;
+  color: var(--yellow);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px;
+  margin-left: -10px;
+  margin-bottom: -3px;
+}
+.mob-menu-head {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-mobile.is-open {
+  translate: none;
+}
+.menu-mob-pos {
+  color: var(--main-white);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.mob-current {
+  color: var(--main-black);
+}
+.menu-mob-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: 48px;
+}
+.mobile-buy-button {
+  border-radius: 10px;
+  background-color: var(--yellow);
+  width: 152px;
+  height: 42px;
+  flex-shrink: 0;
+  border: none;
+  color: var(--main-black);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 110px;
+  margin-inline: auto;
+}
+.menu-close-btn {
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-mobile {
+    display: none;
+  }
+}
