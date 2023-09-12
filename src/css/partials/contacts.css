@@ -230,16 +230,20 @@
   background-color: transparent;
 }
 
-.modal-close-icon {
-  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close-icon:hover {
+.modal-close-icon,
+.modal-close-icon-second {
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-icon:hover,
-.modal-close-icon:focus {
+.modal-close-icon-second {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-icon:hover,
+.modal-close-icon:focus,
+.modal-close-icon-second:hover,
+.modal-close-icon-second:focus {
   transform: rotate(360deg);
 }
 
@@ -294,6 +298,11 @@
   .modal-close-icon {
     width: 24px;
     height: 24px;
+  }
+
+  .modal-close-icon-second {
+    width: 14px;
+    height: 14px;
   }
 
   .modal-body-locations p,
