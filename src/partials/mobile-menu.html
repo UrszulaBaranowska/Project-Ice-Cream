@@ -19,37 +19,74 @@
         <li><a href="#products" class="menu-mob-pos">Our products</a></li>
         <li><a href="#contacts" class="menu-mob-pos">Contact</a></li>
     </ul>
-    <button type="button" class="mobile-buy-button" data-modal-open>
+    <button type="button" class="mobile-buy-button" data-modal-open-1>
         Buy now
         <svg class="arrow-icon" width="12" hight="12">
             <use href="./images/header/headericons.svg#icon-arrow"></use>
         </svg>
     </button>
-    <div class="backdrop is-hidden" data-modal-1>
-        <div class="modal-body">
-            <p>Buy now</p>
+    <div class="backdrop is-hidden " data-modal-1>
+        <div class="modal-body-buy">
+            <p class="modal-title">Buy now</p>
             <button type="button" class="modal-close" data-modal-close-1>X</button>
-            <label>
-                <input type="radio" name="product" value="ice cream" /><img src="./images/modals/icecream.jpg"
-                    srcset="./images/modals/icecream2x.jpg 2x" alt="circle picture with ice cream" />
-            </label>
-            <label>
-                <input type="radio" name="product" value="ice coffee" /><img src="./images/modals/icecoffee.jpg"
-                    srcset="./images/modals/icecoffee2x.jpg 2x" alt="circle picture of ice coffee" />
-            </label>
-            <label>
-                <input type="radio" name="product" value="milkshake" /><img src="./images/modals/milkshake.jpg"
-                    srcset="./images/modals/milkshake2x.jpg 2x" alt="circle picture of milk shake" />
-            </label>
-            <div class="modal-form">
+            <div class="grid">
+                <div class="frame frame-green">
+                    <label class="modal-item-green ">
+                        <input type="radio" name="product" value="ice cream" class="modal-radio" />
+                        <img class="product-img" src="/src/images/products/ice-cream_mobile@1x.png"
+                            alt="cup of ice cream" srcset="
+                                                        /src/images/products/ice-cream_mobile@2x.png  400w,
+                                                        /src/images/products/ice-cream_tablet@1x.png  200w,
+                                                        /src/images/products/ice-cream_tablet@2x.png  400w,
+                                                        /src/images/products/ice-cream_desktop@1x.png 302w,
+                                                        /src/images/products/ice-cream_desktop@2x.png 604w
+                                                      "
+                            sizes="(min-width:1200px) 302px, (min-width:768px) 200px, (min-width:480px) 200px, 100vw" />
+                        <p class="modal-desc">Ice cream</p>
+                    </label>
+                </div>
+                <div class="frame frame-yellow">
+                    <label class="modal-item-yellow">
+                        <input type="radio" name="product" value="ice coffee" class="modal-radio" />
+                        <img class="product-img" src="/src/images/products/ice-coffee_mobile@1x.png"
+                            alt="glass of ice coffee" srcset="
+                                            /src/images/products/ice-coffee_mobile@2x.png  400w,
+                                            /src/images/products/ice-coffee_tablet@2x.png  200w,
+                                            /src/images/products/ice-coffee_tablet@2x.png  400w,
+                                            /src/images/products/ice-coffee_desktop@1x.png 302w,
+                                            /src/images/products/ice-coffee_desktop@2x.png 604w
+                                          "
+                            sizes="(min-width:1200px) 302px, (min-width:768px) 200px, (min-width:480px) 200px, 100vw" />
+                        <p class="modal-desc">Ice coffee</p>
+                    </label>
+                </div>
+                <div class="frame frame-brown">
+                    <label class="modal-item-brown">
+                        <input type="radio" name="product" value="milkshake" class="modal-radio" />
+                        <img class="product-img" src="/src/images/products/milkshakes_mobile@1x.png"
+                            alt="cup of milkshakes" srcset="
+                                                    /src/images/products/milkshakes_mobile@2x.png  400w,
+                                                    /src/images/products/milkshakes_desktop@2x.png 200w,
+                                                    /src/images/products/milkshakes_desktop@2x.png 400w,
+                                                    /src/images/products/milkshakes_desktop@1x.png 302w,
+                                                    /src/images/products/milkshakes_desktop@2x.png 604w
+                                                  "
+                            sizes="(min-width:1200px) 302px,(min-width:768px) 200px, (min-width:480px) 200px, 100vw" />
+                        <p class="modal-desc">Milkshake</p>
+                    </label>
+                </div>
+            </div>
+            <div class="buy-modal-wrapper">
                 <form class="form">
-                    <label for="username" class="modal-input">Name</label>
-                    <input type="name" name="username" id="username" class="modal-form-input" required />
-                    <label for="phone" class="modal-input">Phone</label>
-                    <input type="number" name="phone" id="phone" class="modal-form-input" required />
-                    <label class="texarea-label"> Comment</label>
-                    <textarea name="comment" placeholder="Text input" class="comment" required></textarea>
-                    <button type="submit" class="order-modal">Submit</button>
+                    <!-- <label for="username" class="modal-input">Name</label> -->
+                    <input type="name" name="username" id="username" class="modal-form-input" placeholder="Name"
+                        required />
+                    <!-- <label for="phone" class="modal-input">Phone</label> -->
+                    <input type="tel" name="phone" pattern="\d*" minlength="9" maxlength="12" id="phone"
+                        class="modal-form-input" placeholder="Phone" required />
+                    <!-- <label class="texarea-label"> Comment</label> -->
+                    <textarea name="comment" placeholder="Comment" class="comment" required></textarea>
+                    <button type="submit" class="buy-submit-btn">Submit</button>
                 </form>
             </div>
         </div>
