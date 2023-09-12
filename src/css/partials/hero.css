@@ -185,11 +185,11 @@
     background-repeat: no-repeat;
     background-position: bottom;
   }
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  /* @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-section {
-      background-image: url('/src/images/Hero/dots-tab-2x.png');
+      background-image: url(/src/images/Hero/dots-tab-2x.png);
     }
-  }
+  } */
   .hero-title-box {
     display: flex;
     justify-content: space-between;

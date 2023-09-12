@@ -101,7 +101,7 @@
   color: var(--yellow);
 }
 .backdrop {
-  z-index: 3;
+  z-index: 11;
 }
 .grid {
   display: flex;
