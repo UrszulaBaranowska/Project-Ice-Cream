@@ -137,6 +137,24 @@
   width: auto;
   height: 217px;
   padding-right: 40px;
+  animation: hero-icecream-shadow-spawn 1s ease-in-out 1s forwards,
+    hero-icecream-shadow-flash 1s ease-in-out 2s infinite alternate;
+}
+@keyframes hero-icecream-shadow-spawn {
+  0% {
+    filter: drop-shadow(0 0 #fcfcfc);
+  }
+  100% {
+    filter: drop-shadow(0 0 40px #fcfcfc);
+  }
+}
+@keyframes hero-icecream-shadow-flash {
+  0% {
+    filter: drop-shadow(0 0 40px #fcfcfc);
+  }
+  100% {
+    filter: drop-shadow(0 0 10px #fcfcfc);
+  }
 }
 /*------------MEDIA-MOBILE------------*/
 
