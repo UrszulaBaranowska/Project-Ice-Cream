@@ -203,12 +203,13 @@
   border-radius: 10px;
   border: 2px solid var(--yellow);
   max-width: 280px;
+  max-height: 90vh;
+  overflow-y: scroll;
   transform: translate(-50%, -50%);
   padding: 28px;
-  position: absolute;
+  position: relative;
   /* height: 644px; */
   width: calc(100% - 40px);
-
   left: 50%;
   top: 50%;
 }
@@ -287,6 +288,9 @@
   }
   .modal-body-buy {
     max-width: 568px;
+    position: absolute;
+    max-height: unset;
+    overflow-y: hidden;
   }
   .grid {
     flex-direction: row;
