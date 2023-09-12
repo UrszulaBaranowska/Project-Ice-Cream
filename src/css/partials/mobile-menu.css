@@ -1,6 +1,8 @@
 @import url('./global.css');
 
 .menu-mobile {
+  height: 100vh;
+  width: 100vw;
   translate: -110% 0 0;
   transition: var(--transition);
   position: fixed;
@@ -8,10 +10,10 @@
   flex-direction: column;
   inset: 0;
   background-color: var(--bggreen);
-  height: 100%;
   z-index: 5;
 }
 .mob-logo {
+  margin-left: 32px;
   display: flex;
   align-items: flex-end;
 }
@@ -95,6 +97,8 @@
 .menu-close-btn {
   background-color: transparent;
   border: none;
+  margin-right: 32px;
+  margin-top: 32px;
 }
 
 @media screen and (min-width: 1200px) {

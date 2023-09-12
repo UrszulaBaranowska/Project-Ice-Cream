@@ -1,97 +1,126 @@
-<div class="menu-mobile js-menu-container container">
-    <div class="mob-menu-head">
-        <div class="mob-logo">
-            <svg class="mob-ice-icon" width="19" height="38">
-                <use href="./images/header/headericons.svg#icon-ice-icon"></use>
-            </svg>
-            <p class="mob-ce-icon
-                    ">ce</p>
-        </div>
-        <button type="button" class="menu-close-btn js-close-menu">
-            <svg class="close-x" width="32px" height="32px">
-                <use href="./images/header/headericons.svg#icon-close-icon"></use>
-            </svg>
-        </button>
+<div class="menu-mobile js-menu-container">
+  <div class="mob-menu-head">
+    <div class="mob-logo">
+      <svg class="mob-ice-icon" width="19" height="38">
+        <use href="./images/header/headericons.svg#icon-ice-icon"></use>
+      </svg>
+      <p class="mob-ce-icon">ce</p>
     </div>
-    <ul class="menu-mob-style">
-        <li><a href="#home" class="menu-mob-pos">Home</a></li>
-        <li><a href="#about" class="menu-mob-pos">How it`s made?</a></li>
-        <li><a href="#products" class="menu-mob-pos">Our products</a></li>
-        <li><a href="#contacts" class="menu-mob-pos">Contact</a></li>
-    </ul>
-    <button type="button" class="mobile-buy-button" data-modal-open-1>
-        Buy now
-        <svg class="arrow-icon" width="12" hight="12">
-            <use href="./images/header/headericons.svg#icon-arrow"></use>
-        </svg>
+    <button type="button" class="menu-close-btn js-close-menu">
+      <svg class="close-x" width="32px" height="32px">
+        <use href="./images/header/headericons.svg#icon-close-icon"></use>
+      </svg>
     </button>
-    <div class="backdrop is-hidden " data-modal-1>
-        <div class="modal-body-buy">
-            <p class="modal-title">Buy now</p>
-            <button type="button" class="modal-close" data-modal-close-1>X</button>
-            <div class="grid">
-                <div class="frame frame-green">
-                    <label class="modal-item-green ">
-                        <input type="radio" name="product" value="ice cream" class="modal-radio" />
-                        <img class="product-img" src="/src/images/products/ice-cream_mobile@1x.png"
-                            alt="cup of ice cream" srcset="
-                                                        /src/images/products/ice-cream_mobile@2x.png  400w,
-                                                        /src/images/products/ice-cream_tablet@1x.png  200w,
-                                                        /src/images/products/ice-cream_tablet@2x.png  400w,
-                                                        /src/images/products/ice-cream_desktop@1x.png 302w,
-                                                        /src/images/products/ice-cream_desktop@2x.png 604w
-                                                      "
-                            sizes="(min-width:1200px) 302px, (min-width:768px) 200px, (min-width:480px) 200px, 100vw" />
-                        <p class="modal-desc">Ice cream</p>
-                    </label>
-                </div>
-                <div class="frame frame-yellow">
-                    <label class="modal-item-yellow">
-                        <input type="radio" name="product" value="ice coffee" class="modal-radio" />
-                        <img class="product-img" src="/src/images/products/ice-coffee_mobile@1x.png"
-                            alt="glass of ice coffee" srcset="
-                                            /src/images/products/ice-coffee_mobile@2x.png  400w,
-                                            /src/images/products/ice-coffee_tablet@2x.png  200w,
-                                            /src/images/products/ice-coffee_tablet@2x.png  400w,
-                                            /src/images/products/ice-coffee_desktop@1x.png 302w,
-                                            /src/images/products/ice-coffee_desktop@2x.png 604w
-                                          "
-                            sizes="(min-width:1200px) 302px, (min-width:768px) 200px, (min-width:480px) 200px, 100vw" />
-                        <p class="modal-desc">Ice coffee</p>
-                    </label>
-                </div>
-                <div class="frame frame-brown">
-                    <label class="modal-item-brown">
-                        <input type="radio" name="product" value="milkshake" class="modal-radio" />
-                        <img class="product-img" src="/src/images/products/milkshakes_mobile@1x.png"
-                            alt="cup of milkshakes" srcset="
-                                                    /src/images/products/milkshakes_mobile@2x.png  400w,
-                                                    /src/images/products/milkshakes_desktop@2x.png 200w,
-                                                    /src/images/products/milkshakes_desktop@2x.png 400w,
-                                                    /src/images/products/milkshakes_desktop@1x.png 302w,
-                                                    /src/images/products/milkshakes_desktop@2x.png 604w
-                                                  "
-                            sizes="(min-width:1200px) 302px,(min-width:768px) 200px, (min-width:480px) 200px, 100vw" />
-                        <p class="modal-desc">Milkshake</p>
-                    </label>
-                </div>
-            </div>
-            <div class="buy-modal-wrapper">
-                <form class="form">
-                    <!-- <label for="username" class="modal-input">Name</label> -->
-                    <input type="name" name="username" id="username" class="modal-form-input" placeholder="Name"
-                        required />
-                    <!-- <label for="phone" class="modal-input">Phone</label> -->
-                    <input type="tel" name="phone" pattern="\d*" minlength="9" maxlength="12" id="phone"
-                        class="modal-form-input" placeholder="Phone" required />
-                    <!-- <label class="texarea-label"> Comment</label> -->
-                    <textarea name="comment" placeholder="Comment" class="comment" required></textarea>
-                    <button type="submit" class="buy-submit-btn">Submit</button>
-                </form>
-            </div>
+  </div>
+  <ul class="menu-mob-style">
+    <li><a href="#home" class="menu-mob-pos">Home</a></li>
+    <li><a href="#about" class="menu-mob-pos">How it`s made?</a></li>
+    <li><a href="#products" class="menu-mob-pos">Our products</a></li>
+    <li><a href="#contacts" class="menu-mob-pos">Contact</a></li>
+  </ul>
+  <button type="button" class="mobile-buy-button" data-modal-open-1>
+    Buy now
+    <svg class="arrow-icon" width="12" hight="12">
+      <use href="./images/header/headericons.svg#icon-arrow"></use>
+    </svg>
+  </button>
+  <div class="backdrop is-hidden" data-modal-1>
+    <div class="modal-body-buy">
+      <p class="modal-title">Buy now</p>
+      <button type="button" class="modal-close" data-modal-close-1>X</button>
+      <div class="grid">
+        <div class="frame frame-green">
+          <label class="modal-item-green">
+            <input type="radio" name="product" value="ice cream" class="modal-radio" />
+            <img
+              class="product-img"
+              src="/src/images/products/ice-cream_mobile@1x.png"
+              alt="cup of ice cream"
+              srcset="
+                /src/images/products/ice-cream_mobile@2x.png  400w,
+                /src/images/products/ice-cream_tablet@1x.png  200w,
+                /src/images/products/ice-cream_tablet@2x.png  400w,
+                /src/images/products/ice-cream_desktop@1x.png 302w,
+                /src/images/products/ice-cream_desktop@2x.png 604w
+              "
+              sizes="(min-width:1200px) 302px, (min-width:768px) 200px, (min-width:480px) 200px, 100vw"
+            />
+            <p class="modal-desc">Ice cream</p>
+          </label>
         </div>
+        <div class="frame frame-yellow">
+          <label class="modal-item-yellow">
+            <input type="radio" name="product" value="ice coffee" class="modal-radio" />
+            <img
+              class="product-img"
+              src="/src/images/products/ice-coffee_mobile@1x.png"
+              alt="glass of ice coffee"
+              srcset="
+                /src/images/products/ice-coffee_mobile@2x.png  400w,
+                /src/images/products/ice-coffee_tablet@2x.png  200w,
+                /src/images/products/ice-coffee_tablet@2x.png  400w,
+                /src/images/products/ice-coffee_desktop@1x.png 302w,
+                /src/images/products/ice-coffee_desktop@2x.png 604w
+              "
+              sizes="(min-width:1200px) 302px, (min-width:768px) 200px, (min-width:480px) 200px, 100vw"
+            />
+            <p class="modal-desc">Ice coffee</p>
+          </label>
+        </div>
+        <div class="frame frame-brown">
+          <label class="modal-item-brown">
+            <input type="radio" name="product" value="milkshake" class="modal-radio" />
+            <img
+              class="product-img"
+              src="/src/images/products/milkshakes_mobile@1x.png"
+              alt="cup of milkshakes"
+              srcset="
+                /src/images/products/milkshakes_mobile@2x.png  400w,
+                /src/images/products/milkshakes_desktop@2x.png 200w,
+                /src/images/products/milkshakes_desktop@2x.png 400w,
+                /src/images/products/milkshakes_desktop@1x.png 302w,
+                /src/images/products/milkshakes_desktop@2x.png 604w
+              "
+              sizes="(min-width:1200px) 302px,(min-width:768px) 200px, (min-width:480px) 200px, 100vw"
+            />
+            <p class="modal-desc">Milkshake</p>
+          </label>
+        </div>
+      </div>
+      <div class="buy-modal-wrapper">
+        <form class="form">
+          <!-- <label for="username" class="modal-input">Name</label> -->
+          <input
+            type="name"
+            name="username"
+            id="username"
+            class="modal-form-input"
+            placeholder="Name"
+            required
+          />
+          <!-- <label for="phone" class="modal-input">Phone</label> -->
+          <input
+            type="tel"
+            name="phone"
+            pattern="\d*"
+            minlength="9"
+            maxlength="12"
+            id="phone"
+            class="modal-form-input"
+            placeholder="Phone"
+            required
+          />
+          <!-- <label class="texarea-label"> Comment</label> -->
+          <textarea name="comment" placeholder="Comment" class="comment" required></textarea>
+          <button type="submit" class="buy-submit-btn">Submit</button>
+        </form>
+      </div>
     </div>
+  </div>
 </div>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
