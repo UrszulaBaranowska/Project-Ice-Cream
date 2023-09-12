@@ -1,55 +1,144 @@
 <header class="page-header container" id="home">
-    <div class="header-container">
-        <div class="logo">
-            <svg class="ice-icon" width="19" height="38">
-                <use href="./images/header/headericons.svg#icon-ice-icon"></use>
-            </svg>
-            <p class="ce-icon">ce</p>
-        </div>
-        <button type="button" class="hamburger-btn js-open-menu">
-            <svg class="hamburger-icon" width="32" height="32">
-                <use href="./images/header/headericons.svg#icon-hamburger-icon"></use>
-            </svg>
+  <div class="header-container">
+    <div class="logo">
+      <svg class="ice-icon" width="19" height="38">
+        <use href="./images/header/headericons.svg#icon-ice-icon"></use>
+      </svg>
+      <p class="ce-icon">ce</p>
+    </div>
+    <button type="button" class="hamburger-btn js-open-menu">
+      <svg class="hamburger-icon" width="32" height="32">
+        <use href="./images/header/headericons.svg#icon-hamburger-icon"></use>
+      </svg>
+    </button>
+    <div>
+      <ul class="desktop-menu">
+        <li><a href="#home" class="menu-pos">Home</a></li>
+        <li><a href="#about" class="menu-pos">How it`s made?</a></li>
+        <li><a href="#products" class="menu-pos">Our products</a></li>
+        <li><a href="#contacts" class="menu-pos">Contact</a></li>
+      </ul>
+    </div>
+    <div class="btn-buy-style">
+      <button type="button" class="order buy-button" data-modal-open-1>
+        Buy now
+        <svg class="arrow-icon" width="12" hight="12">
+          <use href="./images/header/headericons.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="backdrop is-hidden" data-modal-1>
+      <div class="modal-body-buy">
+        <p class="modal-title">Buy now</p>
+        <button type="button" class="modal-close" data-modal-close-1>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="modal-close-icon"
+          >
+            <g clip-path="url(#clip0_10674_17392)">
+              <path
+                d="M12.9398 12L18.4665 6.47329C18.5757 6.34576 18.6328 6.18171 18.6263 6.01393C18.6198 5.84614 18.5503 5.68698 18.4315 5.56825C18.3128 5.44952 18.1536 5.37997 17.9859 5.37349C17.8181 5.36701 17.654 5.42408 17.5265 5.53329L11.9998 11.06L6.47315 5.52663C6.34762 5.40109 6.17735 5.33057 5.99982 5.33057C5.82228 5.33057 5.65202 5.40109 5.52649 5.52663C5.40095 5.65216 5.33042 5.82243 5.33042 5.99996C5.33042 6.1775 5.40095 6.34776 5.52649 6.47329L11.0598 12L5.52649 17.5266C5.4567 17.5864 5.40002 17.6599 5.36 17.7426C5.31999 17.8254 5.2975 17.9154 5.29395 18.0073C5.29041 18.0991 5.30588 18.1906 5.33939 18.2762C5.37291 18.3617 5.42375 18.4394 5.48872 18.5044C5.55369 18.5694 5.63139 18.6202 5.71694 18.6537C5.80249 18.6872 5.89404 18.7027 5.98585 18.6992C6.07767 18.6956 6.16776 18.6731 6.25047 18.6331C6.33318 18.5931 6.40672 18.5364 6.46649 18.4666L11.9998 12.94L17.5265 18.4666C17.654 18.5758 17.8181 18.6329 17.9859 18.6264C18.1536 18.62 18.3128 18.5504 18.4315 18.4317C18.5503 18.3129 18.6198 18.1538 18.6263 17.986C18.6328 17.8182 18.5757 17.6542 18.4665 17.5266L12.9398 12Z"
+                fill="#131313"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_10674_17392">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
         </button>
-        <div>
-            <ul class="desktop-menu">
-                <li><a href="#home" class="menu-pos">Home</a></li>
-                <li><a href="#about" class="menu-pos">How it`s made?</a></li>
-                <li><a href="#products" class="menu-pos">Our products</a></li>
-                <li><a href="#contacts" class="menu-pos">Contact</a></li>
-            </ul>
-        </div>
-        <div class="btn-buy-style">
-            <button type="button" class="order buy-button" data-modal-open-1>
-                Buy now
-                <svg class="arrow-icon" width="12" hight="12">
-                    <use href="./images/header/headericons.svg#icon-arrow"></use>
-                </svg>
-            </button>
-        </div>
-        <div class="backdrop is-hidden " data-modal-1>
-            <div class="modal-body-buy">
-                <p class="modal-title">Buy now</p>
-                <button type="button" class="modal-close" data-modal-close-1>X</button>
-                <div class="grid">
-                    <div class="frame frame-green">
+        <form class="form">
+          <div class="checkbox-group">
+            <div class="checkbox">
+              <label class="checkbox-wrapper">
+                <input type="checkbox" class="checkbox-input" />
+                <span class="checkbox-tile-first">
+                  <p class="modal-item-green"></p>
+
+                  <img
+                    class="product-img-first"
+                    src="/src/images/products/ice-cream_mobile@1x.png"
+                    alt="cup of ice cream"
+                    srcset="
+                      /src/images/products/ice-cream_mobile@2x.png  400w,
+                      /src/images/products/ice-cream_tablet@1x.png  200w,
+                      /src/images/products/ice-cream_tablet@2x.png  400w,
+                      /src/images/products/ice-cream_desktop@1x.png 302w,
+                      /src/images/products/ice-cream_desktop@2x.png 604w
+                    "
+                    sizes="(min-width:1200px) 302px, (min-width:768px) 200px, (min-width:480px) 200px, 100vw"
+                  />
+                  <p class="modal-desc">Ice cream</p>
+                </span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label class="checkbox-wrapper">
+                <input type="checkbox" class="checkbox-input" checked />
+                <span class="checkbox-tile-second">
+                  <span class="checkbox-item">
+                    <p class="modal-item-yellow"></p>
+
+                    <img
+                      class="product-img-second"
+                      src="/src/images/products/ice-coffee_mobile@1x.png"
+                      alt="glass of ice coffee"
+                      srcset="
+                        /src/images/products/ice-coffee_mobile@2x.png  400w,
+                        /src/images/products/ice-coffee_tablet@2x.png  200w,
+                        /src/images/products/ice-coffee_tablet@2x.png  400w,
+                        /src/images/products/ice-coffee_desktop@1x.png 302w,
+                        /src/images/products/ice-coffee_desktop@2x.png 604w
+                      "
+                      sizes="(min-width:1200px) 302px, (min-width:768px) 200px, (min-width:480px) 200px, 100vw"
+                    />
+                    <p class="modal-desc">Ice coffee</p>
+                  </span>
+                </span>
+              </label>
+            </div>
+            <div class="checkbox last-checkbox">
+              <label class="checkbox-wrapper">
+                <input type="checkbox" class="checkbox-input" />
+                <span class="checkbox-tile-third">
+                  <span class="checkbox-item">
+                    <p class="modal-item-brown"></p>
+                    <img
+                      class="product-img-third"
+                      src="/src/images/products/milkshakes_mobile@1x.png"
+                      alt="milkshake"
+                      srcset="
+                        /src/images/products/milkshakes_mobile@2x.png  400w,
+                        /src/images/products/milkshakes_tablet@1x.png  200w,
+                        /src/images/products/milkshakes_tablet@2x.png  400w,
+                        /src/images/products/milkshakes_desktop@1x.png 302w,
+                        /src/images/products/milkshakes_desktop@2x.png 604w
+                      "
+                      sizes="(min-width:1200px) 302px, (min-width:768px) 200px, (min-width:480px) 200px, 100vw"
+                    />
+                    <p class="modal-desc">Milkshake</p>
+                  </span>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <!--
+                        <div class="grid">
+                             <div class="frame frame-green">
+                        <input type="checkbox" name="product" value="ice cream" class="modal-radio" />
                         <label class="modal-item-green ">
-                            <input type="radio" name="product" value="ice cream" class="modal-radio" />
-                            <img class="product-img" src="/src/images/products/ice-cream_mobile@1x.png"
-                                alt="cup of ice cream" srcset="
-                                                /src/images/products/ice-cream_mobile@2x.png  400w,
-                                                /src/images/products/ice-cream_tablet@1x.png  200w,
-                                                /src/images/products/ice-cream_tablet@2x.png  400w,
-                                                /src/images/products/ice-cream_desktop@1x.png 302w,
-                                                /src/images/products/ice-cream_desktop@2x.png 604w
-                                              "
-                                sizes="(min-width:1200px) 302px, (min-width:768px) 200px, (min-width:480px) 200px, 100vw" />
-                            <p class="modal-desc">Ice cream</p>
+                            
                         </label>
                     </div>
                     <div class="frame frame-yellow">
                         <label class="modal-item-yellow">
-                            <input type="radio" name="product" value="ice coffee" class="modal-radio" />
+                            <input type="checkbox" name="product" value="ice coffee" class="modal-radio" />
                             <img class="product-img" src="/src/images/products/ice-coffee_mobile@1x.png"
                                 alt="glass of ice coffee" srcset="
                                     /src/images/products/ice-coffee_mobile@2x.png  400w,
@@ -64,7 +153,7 @@
                     </div>
                     <div class="frame frame-brown">
                         <label class="modal-item-brown">
-                            <input type="radio" name="product" value="milkshake" class="modal-radio" />
+                            <input type="checkbox" name="product" value="milkshake" class="modal-radio" />
                             <img class="product-img" src="/src/images/products/milkshakes_mobile@1x.png"
                                 alt="cup of milkshakes" srcset="
                                             /src/images/products/milkshakes_mobile@2x.png  400w,
@@ -76,22 +165,53 @@
                                 sizes="(min-width:1200px) 302px,(min-width:768px) 200px, (min-width:480px) 200px, 100vw" />
                             <p class="modal-desc">Milkshake</p>
                         </label>
-                    </div>
-                </div>
-                <div class="buy-modal-wrapper">
-                    <form class="form">
-                        <!-- <label for="username" class="modal-input">Name</label> -->
-                        <input type="name" name="username" id="username" class="modal-form-input" placeholder="Name"
-                            required />
-                        <!-- <label for="phone" class="modal-input">Phone</label> -->
-                        <input type="tel" name="phone" pattern="\d*" minlength="9" maxlength="12" id="phone"
-                            class="modal-form-input" placeholder="Phone" required />
-                        <!-- <label class="texarea-label"> Comment</label> -->
-                        <textarea name="comment" placeholder="Comment" class="comment" required></textarea>
-                        <button type="submit" class="buy-submit-btn">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+                    </div> -->
+
+          <!-- <label for="username" class="modal-input">Name</label> -->
+          <input
+            type="name"
+            name="username"
+            id="username"
+            class="modal-form-input"
+            placeholder="Name"
+            required
+          />
+          <!-- <label for="phone" class="modal-input">Phone</label> -->
+          <input
+            type="tel"
+            name="phone"
+            pattern="\d*"
+            minlength="9"
+            maxlength="12"
+            id="phone"
+            class="modal-form-input"
+            placeholder="Phone"
+            required
+          />
+          <!-- <label class="texarea-label"> Comment</label> -->
+          <textarea name="comment" placeholder="Comment" class="comment" required></textarea>
+          <button type="submit" class="buy-submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </header>
-</div>
+
+<!-- <div>
+                    <input
+                      class="modal-check visually-hidden"
+                      name="policy-checkbox"
+                      id="policy-checkbox"
+                      type="checkbox"
+                      required
+                    />
+                    <label class="modal-check-text" for="policy-checkbox">
+                      <span class="modal-check-span">
+                        <svg class="checkbox-icon">
+                          <use href="./images/icons.svg#icon-checkbox"></use>
+                        </svg>
+                      </span>
+                      I accept the terms and conditions of the
+                      <a href="#">Privacy Policy</a>
+                    </label>
+                  </div> -->
