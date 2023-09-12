@@ -1,5 +1,8 @@
 @import url('./global.css');
-
+.mobile-btn-wrapper {
+  text-align: center;
+  position: relative;
+}
 .menu-mobile {
   height: 100vh;
   width: 100vw;
