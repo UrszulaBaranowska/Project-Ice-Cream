@@ -41,7 +41,7 @@
         <div class="backdrop is-hidden" data-modal-3 id="myModal" aria-labelledby="myModalLabel">
           <div class="modal-body">
             <p class="modal-title">How it’s made?</p>
-            <button type="button" class="modal-close" data-modal-close-3>
+            <button type="button" class="modal-close" data-modal-close-3 onclick="pauseVideo()">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -65,7 +65,13 @@
             </button>
 
             <div class="video-wrapper">
-              <video src="./video/FUNNY_COW.mp4" frameborder="0" allowfullscreen controls></video>
+              <video
+                id="myVideo"
+                src="./video/FUNNY_COW.mp4"
+                frameborder="0"
+                allowfullscreen
+                controls
+              ></video>
             </div>
             <p class="modal-lorem-about">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus et
